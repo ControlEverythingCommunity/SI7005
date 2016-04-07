@@ -1,4 +1,4 @@
-[![SI7005](SI7005_I2CS_A.png)](https://www.controleverything.com/content/Temperature?sku=SI7005_I2CS)
+[![SI7005](SI7005_I2CS.png)](https://www.controleverything.com/content/Temperature?sku=SI7005_I2CS)
 # SI7005
 SI7005 Humidity and Temperature Sensor
 
