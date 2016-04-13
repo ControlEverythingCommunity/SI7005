@@ -33,7 +33,7 @@ public class SI7005
 		}
 
 		// Convert the data to 14-bits
-		double cTemp = ((((data[1] & 0xFF)* 256 + (data[2]  & 0xFC)) / 4.0) / 32.0) - 50.0;
+		double cTemp = ((((data[1] & 0xFF) * 256 + (data[2]  & 0xFC)) / 4.0) / 32.0) - 50.0;
 		double fTemp = cTemp * 1.8 + 32;
 
 		// Send humidity measurement command
