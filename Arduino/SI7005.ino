@@ -68,7 +68,7 @@ void loop()
     Wire.requestFrom(Addr, 3);
 
     // Read 3 byte of data
-    // status, humidity_msb, humidity_lsb
+    // status, temp_msb, temp_lsb
     if (Wire.available() == 3)
     {
       data[0] = Wire.read();
