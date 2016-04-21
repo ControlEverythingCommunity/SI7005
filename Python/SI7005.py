@@ -46,8 +46,6 @@ while (data[0] & 0x01) != 0 :
 
 # Convert the data to 12-bits
 humidity = ((data[1] * 256 + data[2]) / 16.0) / 16.0 - 24.0
-humidity = humidity - (((humidity * humidity) * (-0.00393)) + (humidity * 0.4008) - 4.7844)
-humidity = humidity + (ctemp - 30) * (humidity * 0.00237 + 0.1973)
 
 # Output data to screen
 print "Relative Humidity : %.2f %%" %humidity
