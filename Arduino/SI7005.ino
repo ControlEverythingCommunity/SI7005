@@ -138,8 +138,6 @@ void loop()
   // Convert the data to 12-bits
   float humidity = ((data[1] * 256.0) + (data[2] & 0xF0)) / 16;
   humidity = (humidity / 16.0) - 24.0;
-  humidity = humidity - (((humidity * humidity) * (-0.00393)) + (humidity * 0.4008) - 4.7844);
-  humidity = humidity + (cTemp - 30) * (humidity * 0.00237 + 0.1973);
 
   // Output data to serial monitor
   Serial.print("Relative humidity : ");
