@@ -47,7 +47,7 @@ void main()
 			read(file, data, 3);
 		}
 
-		// Convert the data
+		// Convert the data to 14-bits
 		float cTemp = (((data[1] * 256 + (data[2]  & 0xFC)) / 4.0) / 32.0) - 50.0;
 		float fTemp = cTemp * 1.8 + 32;
 
