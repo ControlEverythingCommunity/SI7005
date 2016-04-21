@@ -51,8 +51,6 @@ public class SI7005
 
 		// Convert the data to 12-bits
 		double humidity = ((((data[1] & 0xFF) * 256 + (data[2] & 0xF0)) / 16.0) / 16.0) - 24.0;
-		humidity = humidity - (((humidity * humidity) * (-0.00393)) + (humidity * 0.4008) - 4.7844);
-		humidity = humidity + (cTemp - 30) * (humidity * 0.00237 + 0.1973);
 
 		// Output data to screen
 		System.out.printf("Relative Humidity : %.2f %% %n", humidity);
